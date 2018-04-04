@@ -1,6 +1,7 @@
-const clients = require('restify-clients');
 
 module.exports = function (server, restify) {
+
+  const clients = require('restify-clients');
 
   const ILIAS_URL = 'http://ec2-18-188-33-124.us-east-2.compute.amazonaws.com';
   const BASE_PATH = '/Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/REST/api.php';
@@ -23,7 +24,6 @@ module.exports = function (server, restify) {
   }
 
   server.post('/v1/ilias/token', function (req, res, next) {
-    var args = getRequestArguments(req);
 
     var iliasClient = clients.createJsonClient({
       url: ILIAS_URL
@@ -36,7 +36,6 @@ module.exports = function (server, restify) {
 
       },
     };
-    console.log("dschmidt: " + req.body);
     req.body['grant_type'] = "password";
     req.body['api_key'] = "apollon";
 

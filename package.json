@@ -8,7 +8,7 @@
   },
   "scripts": {
     "deploy": "gcloud app deploy",
-    "start": "node app.js",
+    "start": "node server.js",
     "lint": "repo-tools lint",
     "pretest": "npm run lint",
     "system-test": "repo-tools test app",
@@ -17,7 +17,9 @@
   },
   "dependencies": {
     "restify": "*",
-    "restify-clients": "*"
+    "restify-clients": "*",
+    "node-schedule": "*",
+    "async-polling": "*"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "2.2.1"
