@@ -26,10 +26,11 @@ module.exports = function () {
       if (err) {
         throw err;
       }
+//TODO hier muss dann die db  an die routen übergeben werden. bzw module die es nutzen
+      const database = db.db('v-app');
+      const collection = database.collection("test");
+      collection.insert({"dschmidt": "test", "gestartetam:": new Date()}, (err) => {
 
-      const collection = db.collection('test');
-
-      collection.insert({"dschmidt": "test", "weiter": "ja"}, (err) => {
         if (err) {
           throw err;
         }
