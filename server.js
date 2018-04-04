@@ -28,6 +28,7 @@ server.listen(PORT, function () {
 
 });
 
+var mongoDB = require('./db/mongoInit.js')();
 
 var scheduleJobs = require('./tasks/scheduleJobs')();
 var pollingJobs = require('./tasks/pollingJobs')();

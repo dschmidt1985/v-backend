@@ -1,6 +1,6 @@
 {
   "name": "Verbundstudium-Backend",
-  "description": "Backend Middleware for all Client functions for the V-APp",
+  "description": "Backend Middleware for all Client functions for the V-App",
   "version": "0.0.1",
   "private": true,
   "engines": {
@@ -19,6 +19,8 @@
     "restify": "*",
     "restify-clients": "*",
     "node-schedule": "*",
+    "mongodb": "*",
+    "nconf": "*",
     "async-polling": "*"
   },
   "devDependencies": {
