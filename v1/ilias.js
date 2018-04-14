@@ -6,8 +6,6 @@ module.exports = function (server, restify) {
   const ILIAS_URL = 'http://ec2-18-188-33-124.us-east-2.compute.amazonaws.com';
   const BASE_PATH = '/Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/REST/api.php';
 
-  var tradingProductsById = {};
-
 
   function getRequestArguments(req) {
     var authorizationHeader = req.headers["authorization"];

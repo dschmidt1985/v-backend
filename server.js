@@ -14,7 +14,8 @@ server.use(restify.plugins.bodyParser({
 // const express = require('express');
 // const app = express();
 
-var ilias = require('./v1/ilias')(server, restify, 'ilias_url');
+var ilias = require('./v1/ilias')(server, restify);
+var mensa = require('./v1/mensa')(server, restify);
 
 
 server.get("/", function(req, res, next) {
