@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd1fae9-7dba-4460-9313-f05aa8174f8e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v1/mensa.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/mensa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/pollingJobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/pollingJobs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1/ilias.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/ilias.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +22,11 @@
         <splitter split-orientation="horizontal" split-proportion="0.5">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="fcmPush.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/push/fcmPush.js">
+              <file leaf-file-name="pollingJobs.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/tasks/pollingJobs.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="120">
-                      <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+                    <state relative-caret-position="315">
+                      <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
                     </state>
                   </provider>
                 </entry>
@@ -40,8 +38,8 @@
               <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/server.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="270">
-                      <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+                    <state relative-caret-position="15">
+                      <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
                     </state>
                   </provider>
                 </entry>
@@ -55,8 +53,8 @@
           <file leaf-file-name="ilias.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/v1/ilias.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="303">
+                  <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -77,6 +75,7 @@
       <find>start</find>
       <find>app.js</find>
       <find>app</find>
+      <find>res</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -87,17 +86,17 @@
       <list>
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/tasks/PollingJobs.js" />
-        <option value="$PROJECT_DIR$/tasks/pollingJobs.js" />
         <option value="$PROJECT_DIR$/tasks/scheduleJobs.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/db/keys_template.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/db/keys.json" />
         <option value="$PROJECT_DIR$/db/mongoInit.js" />
-        <option value="$PROJECT_DIR$/v1/ilias.js" />
         <option value="$PROJECT_DIR$/v1/mensa.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/push/fcmPush.js" />
+        <option value="$PROJECT_DIR$/tasks/pollingJobs.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/v1/ilias.js" />
       </list>
     </option>
   </component>
@@ -196,12 +195,12 @@
       <workItem from="1523710573566" duration="1216000" />
       <workItem from="1523855724716" duration="33000" />
       <workItem from="1524508209098" duration="630000" />
-      <workItem from="1524512925995" duration="1176000" />
+      <workItem from="1524512925995" duration="4424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12591000" />
+    <option name="totallyTimeSpent" value="15839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3440" height="1440" extended-state="0" />
@@ -284,13 +283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/pollingJobs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/scheduleJobs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -319,13 +311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v1/ilias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v1/mensa.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -340,13 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fcm-node/lib/fcm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -356,8 +334,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/push/fcmPush.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="495">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/pollingJobs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/ilias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>

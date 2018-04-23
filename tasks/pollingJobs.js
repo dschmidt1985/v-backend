@@ -1,6 +1,8 @@
 module.exports = function (server, restify) {
   var AsyncPolling = require('async-polling');// https://www.npmjs.com/package/node-schedule
 
+  var rePoll = 1000 * 60 * 5; //milliseconds * seconds * minutes
+
   var polling = AsyncPolling(function (end) {
       //TODO hier jetzt den api call um unsere db mit aktuellen kalendern zu füttern
       // someAsynchroneProcess(function (error, response) {
@@ -17,7 +19,7 @@ module.exports = function (server, restify) {
     console.log("polling end");
       end();
       // });
-    }, 60000
+    }, rePoll
     )
   ;
 
@@ -28,11 +30,11 @@ module.exports = function (server, restify) {
   });
   polling.on('result', function (result) {
     // The polling yielded some result, process it here.
-    console.log("dschmidt polling result");
+    console.log("dschmidt polling result " + new Date());
   });
 
   //TODO comment in if we want to poll for anything
-  //polling.run(); // Let's start polling.
+  polling.run(); // Let's start polling.
 
 }
 ;
