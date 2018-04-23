@@ -16,12 +16,13 @@
     "e2e-test": "repo-tools test deploy"
   },
   "dependencies": {
-    "restify": "*",
-    "restify-clients": "*",
-    "node-schedule": "*",
+    "async-polling": "*",
+    "fcm-node": "^1.2.1",
     "mongodb": "*",
     "nconf": "*",
-    "async-polling": "*"
+    "node-schedule": "*",
+    "restify": "*",
+    "restify-clients": "*"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "2.2.1"

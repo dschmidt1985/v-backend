@@ -16,6 +16,7 @@ server.use(restify.plugins.bodyParser({
 
 var ilias = require('./v1/ilias')(server, restify);
 var mensa = require('./v1/mensa')(server, restify);
+var push = require('./push/fcmPush')();
 
 
 server.get("/", function(req, res, next) {
