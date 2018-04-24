@@ -11,26 +11,33 @@ server.use(restify.plugins.bodyParser({
   mapParams: true
 }));
 
-// const express = require('express');
-// const app = express();
 
-var ilias = require('./v1/ilias')(server, restify);
-var mensa = require('./v1/mensa')(server, restify);
-var push = require('./push/fcmPush')();
-
-
-server.get("/", function(req, res, next) {
-  res.send("Willkommen bei der API-der Verbundstudium-App. Lade dir doch unsere mobilen Clients herunter!");
-  next();
+var mongoDB = require('./db/mongoInit.js');
+mongoDB.connect(function(err) {
+  if (err) {
+    console.log('Unable to connect to Mongo.');
+    process.exit(1)
+  } else {
+    initAfterDB();
+  }
 });
 
+function initAfterDB() {
+  var ilias = require('./v1/ilias')(server, restify);
+  var mensa = require('./v1/mensa')(server, restify);
+  var push = require('./push/fcmPush')();
 
-server.listen(PORT, function () {
-  console.log('server listening on port number', PORT);
 
-});
+  server.get("/", function(req, res, next) {
+    res.send("Willkommen bei der API-der Verbundstudium-App. Lade dir doch unsere mobilen Clients herunter!");
+    next();
+  });
 
-var mongoDB = require('./db/mongoInit.js')();
 
-var scheduleJobs = require('./tasks/scheduleJobs')();
-var pollingJobs = require('./tasks/pollingJobs')();
+  server.listen(PORT, function () {
+    console.log('server listening on port number', PORT);
+
+  });
+
+
+}
