@@ -5,8 +5,6 @@ module.exports = function (server, restify) {
   // const ILIAS_URL = 'http://ec2-18-188-33-124.us-east-2.compute.amazonaws.com';
   // const BASE_PATH = '/Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/REST/api.php';
 
-  var tradingProductsById = {};
-
   function getRequestArguments(req) {
     var authorizationHeader = req.headers["authorization"];
     if (authorizationHeader) {
@@ -54,7 +52,7 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Asiatische Bratnudeln',
-          priceStudent: 3.5,
+          priceStudent: 3.2,
           priceGuest: 6.0
         },
         {
@@ -66,7 +64,7 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Pikante Hähnchenstücke mit knackigem Gemüse',
-          priceStudent: 3.5,
+          priceStudent: 3.8,
           priceGuest: 6.0
         },
         {
@@ -84,19 +82,19 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Bihun - Suppe',
-          priceStudent: 3.5,
+          priceStudent: 3.0,
           priceGuest: 6.0
         },
         {
           name: 'Menü ',
           description: 'Blätterteig-Schinken-Käse-Stangen',
-          priceStudent: 3.5,
+          priceStudent: 3.2,
           priceGuest: 6.0
         },
         {
           name: 'Menü ',
           description: 'Brathähnchen  Oma´s Art',
-          priceStudent: 3.5,
+          priceStudent: 2.5,
           priceGuest: 6.0
         },
         {
@@ -120,13 +118,13 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Bunte Reispfanne',
-          priceStudent: 3.5,
+          priceStudent: 3.3,
           priceGuest: 6.0
         },
         {
           name: 'Menü ',
           description: 'Burrito Fiesta',
-          priceStudent: 3.5,
+          priceStudent: 3.2,
           priceGuest: 6.0
         },
         {
@@ -138,7 +136,7 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Chicken Nuggets knusprig und zart',
-          priceStudent: 3.5,
+          priceStudent: 3.8,
           priceGuest: 6.0
         },
         {
@@ -150,13 +148,13 @@ module.exports = function (server, restify) {
         {
           name: 'Menü ',
           description: 'Curryfleisch mit Reis',
-          priceStudent: 3.5,
+          priceStudent: 3.0,
           priceGuest: 6.0
         },
         {
           name: 'Menü ',
           description: 'Currywurstpfanne',
-          priceStudent: 3.5,
+          priceStudent: 2.8,
           priceGuest: 6.0
         },
         {
