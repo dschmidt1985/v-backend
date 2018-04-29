@@ -225,15 +225,20 @@ module.exports = function (server, restify) {
 
     var firstNumber = Math.floor((Math.random() * dishes.length));
     var secondNumber;
+    var thirdNumber;
     do {
       secondNumber = Math.floor((Math.random() * dishes.length));
     } while (firstNumber === secondNumber);
+    do {
+      thirdNumber = Math.floor((Math.random() * dishes.length));
+    } while (thirdNumber === secondNumber || thirdNumber === firstNumber);
 
     var result = [];
     result.push(dishes[firstNumber]);
     result.push(dishes[secondNumber]);
     result[0].name += '1';
     result[1].name += '2';
+    result[2].name += '3';
     res.send(result);
 
     return next();
