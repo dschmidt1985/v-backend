@@ -4,6 +4,11 @@ module.exports = function () {
   var serverKey = 'AAAAtK1GwyE:APA91bE8T0vMwmArnseksGTo35mKp8dOd8IVxiqhVStixFHPQqTe7WcovxBE9A_znseKmvsjcrfnk_U-ieW04zUaNQ1Tq20gCkIgBmHID_gNHLllulJvrajyh2_xqp-3dbpWmRkzBkFb'; //put your server key here
   var fcm = new FCM(serverKey);
 
+  var pushHour = 17;
+  var pushMinute = 30;
+
+  var dayBeforePush = 1;
+
 
   function sendPush(event) {
     var message = { //this may vary according to the message type (single recipient, multicast, topic, et cetera)
@@ -18,7 +23,8 @@ module.exports = function () {
       data: {  //you can send only notification or only data(or include both)
         startDate: getDateFromFormattedString(event.event_start),
         endDate: getDateFromFormattedString(event.event_end),
-        location: event.event_location
+        location: event.event_location,
+        fullDay: event.event_full_day
       }
     };
 
@@ -53,15 +59,14 @@ module.exports = function () {
         result.forEach(function (event) {
           var eventDate = getDateFromFormattedString(event.event_start);
           var pushDate = new Date();
-          pushDate.setDate(eventDate.getDate() - 1);
-          // if (pushDate > new Date()) {
+          pushDate.setDate(eventDate.getDate() - dayBeforePush);
+          if (pushDate > new Date()) {
             //push should be send
-            pushDate = new Date();
-            pushDate.setHours(23, 14, 0, 0);
+            pushDate.setHours(pushHour, pushMinute, 0, 0);
             scheduledJobs.push(schedule.scheduleJob(pushDate, function () {
               sendPush(event);
             }));
-          // }
+          }
 
         });
       });
