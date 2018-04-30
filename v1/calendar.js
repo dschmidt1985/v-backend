@@ -19,7 +19,7 @@ module.exports = function (server, restify) {
     return null;
   }
 
-  server.get('/v1/schedule', function(req, res, next) {
+  server.get('/v1/exams', function (req, res, next) {
     var events = {
       plan: 'SS 2018 (Master)',
       events: [
@@ -27,121 +27,98 @@ module.exports = function (server, restify) {
           number: 'P1',
           day: '03.02.2018',
           ort: 'DO',
-          meetings: {
-            "general":"Klausuren"
-          }
+          exams: [
+            {
+              name: "IT-Consulting",
+              start: "09:00 Uhr",
+              room: "4002"
+            },
+            {
+              name: "IT-Management",
+              start: "13:00 Uhr",
+              room: "321"
+            }
+          ]
         },
         {
           number: 'P2',
           day: '10.02.2018',
           ort: 'GM',
-          meetings: {
-            "general":"Klausuren"
-          }
+          exams: [
+            {
+              name: "Internet Datenbanken",
+              start: "09:00 Uhr",
+              room: "201"
+            },
+            {
+              name: "Mensch-Computer-Interaktion",
+              start: "11:00 Uhr",
+              room: "456"
+            }
+          ]
         },
         {
           number: 'P3',
           day: '17.02.2018',
           ort: 'DO',
-          meetings: {
-            "general":"Klausuren"
-          }
-        },
-        {
-          number: 'T1',
-          day: '03.03.2018',
-          ort: 'GM',
-          meetings: {
-            "2. Semester": "Mensch-Computer-Interaktion",
-            "4. Semester": "IT-Consulting",
-          }
-        },
-        {
-          number: 'T2',
-          day: '17.03.2018',
-          ort: 'DO',
-          meetings: {
-            "2. Semester": "IT-Sicherheit (Security- und Risk-Management)",
-            "4. Semester": "Fortgeschritene Softwaretechnologie",
-          }
-        },
-        {
-          number: 'T3',
-          day: '24.03.2018',
-          ort: 'GM',
-          meetings: {
-            "2. Semester": "Mensch-Computer-Interaktion",
-            "4. Semester": "IT-Consulting",
-          }
-        },
-        {
-          number: 'T4',
-          day: '14.04.2018',
-          ort: 'DO',
-          meetings: {
-            "2. Semester": "IT-Sicherheit (Security- und Risk-Management)",
-            "4. Semester": "Fortgeschritene Softwaretechnologie",
-          }
-        },
-        {
-          number: 'T5',
-          day: '21.04.2018',
-          ort: 'GM',
-          meetings: {
-            "2. Semester": "Mensch-Computer-Interaktion",
-            "4. Semester": "IT-Consulting",
-          }
-        },
-        {
-          number: 'T6',
-          day: '05.05.2018',
-          ort: 'DO',
-          meetings: {
-            "2. Semester": "IT-Sicherheit (Security- und Risk-Management)",
-            "4. Semester": "Fortgeschritene Softwaretechnologie",
-          }
-        },
-        {
-          number: 'T7',
-          day: '09.06.2018',
-          ort: 'GM',
-          meetings: {
-            "2. Semester": "Mensch-Computer-Interaktion",
-            "4. Semester": "IT-Consulting",
-          }
-        },
-        {
-          number: 'T8',
-          day: '16.06.2018',
-          ort: 'DO',
-          meetings: {
-            "2. Semester": "IT-Sicherheit (Security- und Risk-Management)",
-            "4. Semester": "Fortgeschritene Softwaretechnologie",
-          }
+          exams: [
+            {
+              name: "Fortgeschrittene Softwaretechnik",
+              start: "10:00 Uhr",
+              room: "3021"
+            },
+            {
+              name: "Informationssysteme",
+              start: "13:00 Uhr",
+              room: "4021"
+            }
+          ]
         },
         {
           number: 'P4',
           day: '30.06.2018',
           ort: 'GM',
-          meetings: {
-            "general":"Klausuren"
-          }
+          exams: [
+            {
+              name: "IT-Sicherheit",
+              start: "13:00 Uhr",
+              room: "4021"
+            }
+          ]
         },
         {
           number: 'P5',
           day: '07.07.2018',
           ort: 'DO',
-          meetings: {
-            "general":"Klausuren"
-          }
+          exams: [
+            {
+              name: "IT-Management",
+              start: "10:00 Uhr",
+              room: "3021"
+            },
+            {
+              name: "IT-Consulting",
+              start: "13:00 Uhr",
+              room: "4021"
+            }
+          ]
         },
         {
           number: 'P6',
           day: '30.06.2018',
           ort: 'GM',
-          meetings: {
-            "general":"Klausuren"
-          }
+          exams: [
+            {
+              name: "IT-Security",
+              start: "10:00 Uhr",
+              room: "3021"
+            },
+            {
+              name: "IT-Consulting",
+              start: "13:00 Uhr",
+              room: "4021"
+            }
+          ]
         }
       ]
     };
@@ -149,61 +126,148 @@ module.exports = function (server, restify) {
     return next();
   });
 
-  server.get('/v1/calendar', function (req, res, next) {
-    var events = [
-      {
-        "_id": {
-          "$oid": "5ae5f091e005440010d8a43b"
-        },
-        "calendar_id": 2,
-        "event_id": 1,
-        "calendar_title": "Vorlesungstermine",
-        "event_title": "Fortgeschrittene Softwareentwicklung",
-        "event_description": "",
-        "event_location": "FH Dortmund",
-        "event_start": "20180414T060000Z",
-        "event_end": "20180414T140000Z",
-        "event_full_day": false,
-        "update_date": {
-          "$date": "2018-04-29T16:19:29.763Z"
-        }
-      },
-      {
-        "_id": {
-          "$oid": "5ae5f091e005440010d8a43d"
-        },
-        "calendar_id": 1,
-        "event_id": 3,
-        "calendar_title": "32 \u2013 Fortgeschrittene Softwaretechnologie",
-        "event_title": "Deadline M2",
-        "event_description": "",
-        "event_location": "",
-        "event_start": "20180409T000000Z",
-        "event_end": "20180409T000000Z",
-        "event_full_day": true,
-        "update_date": {
-          "$date": "2018-04-29T16:19:29.769Z"
-        }
-      },
-      {
-        "_id": {
-          "$oid": "5ae5f091e005440010d8a43c"
-        },
-        "calendar_id": 1,
-        "event_id": 2,
-        "calendar_title": "32 \u2013 Fortgeschrittene Softwaretechnologie",
-        "event_title": "Deadline M3",
-        "event_description": "Grobentwurf sollte fertig sein",
-        "event_location": "",
-        "event_start": "20180430T000000Z",
-        "event_end": "20180430T000000Z",
-        "event_full_day": true,
-        "update_date": {
-          "$date": "2018-04-29T16:19:29.768Z"
-        }
-      }];
 
+  server.get('/v1/lessons', function (req, res, next) {
+    var events = {
+      plan: 'SS 2018 (Master)',
+      events: [
+        {
+          number: 'T1',
+          day: '03.03.2018',
+          ort: 'GM',
+          meetings: [
+            {semester: "2. Semester", room: "1351", name: "Mensch-Computer-Interaktion"},
+            {semester: "4. Semester", room: "2002", name: "IT-Consulting"}]
+        },
+        {
+          number: 'T2',
+          day: '17.03.2018',
+          ort: 'DO',
+          meetings: [{semester: "2. Semester", room: "1351", name: "IT-Sicherheit (Security- und Risk-Management)"},
+            {semester: "4. Semester", room: "2002", name: "Fortgeschritene Softwaretechnologie"}]
+        },
+        {
+          number: 'T3',
+          day: '24.03.2018',
+          ort: 'GM',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "Mensch-Computer-Interaktion"},
+              {semester: "4. Semester", room: "2002", name: "IT-Consulting"}]
+        },
+        {
+          number: 'T4',
+          day: '14.04.2018',
+          ort: 'DO',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "IT-Sicherheit (Security- und Risk-Management)"}, {
+              semester: "4. Semester", room: "2002", name: "Fortgeschritene Softwaretechnologie"
+            }]
+        },
+        {
+          number: 'T5',
+          day: '21.04.2018',
+          ort: 'GM',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "Mensch-Computer-Interaktion"}, {
+              semester: "4. Semester", room: "2002", name: "IT-Consulting"
+            }]
+        },
+        {
+          number: 'T6',
+          day: '05.05.2018',
+          ort: 'DO',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "IT-Sicherheit (Security- und Risk-Management)"},
+              {semester: "4. Semester", room: "2002", name: "Fortgeschritene Softwaretechnologie"}]
+        },
+        {
+          number: 'T7',
+          day: '09.06.2018',
+          ort: 'GM',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "Mensch-Computer-Interaktion"}, {
+              semester: "4. Semester", room: "2002", name: "IT-Consulting"
+            }]
+        },
+        {
+          number: 'T8',
+          day: '16.06.2018',
+          ort: 'DO',
+          meetings:
+            [{semester: "2. Semester", room: "1351", name: "IT-Sicherheit (Security- und Risk-Management)"}, {
+              semester: "4. Semester", room: "2002", name: "Fortgeschritene Softwaretechnologie"
+            }]
+        }]
+    };
     res.send(events);
+    return next();
+  });
+
+  server.get('/v1/calendar', function (req, res, next) {
+
+    var mongoDB = require('../db/mongoInit.js');
+
+    const calendarCollection = mongoDB.get().collection('calendar_events');
+    calendarCollection.find({}).toArray(function (err, result) {
+      if (err) throw err;
+      console.log('schedule push events for these entries: ' + result);
+      res.send(result);
+    });
+
+    // var events = [
+    //   {
+    //     "_id": {
+    //       "$oid": "5ae5f091e005440010d8a43b"
+    //     },
+    //     "calendar_id": 2,
+    //     "event_id": 1,
+    //     "calendar_title": "Vorlesungstermine",
+    //     "event_title": "Fortgeschrittene Softwareentwicklung",
+    //     "event_description": "",
+    //     "event_location": "FH Dortmund",
+    //     "event_start": "20180414T060000Z",
+    //     "event_end": "20180414T140000Z",
+    //     "event_full_day": false,
+    //     "update_date": {
+    //       "$date": "2018-04-29T16:19:29.763Z"
+    //     }
+    //   },
+    //   {
+    //     "_id": {
+    //       "$oid": "5ae5f091e005440010d8a43d"
+    //     },
+    //     "calendar_id": 1,
+    //     "event_id": 3,
+    //     "calendar_title": "32 \u2013 Fortgeschrittene Softwaretechnologie",
+    //     "event_title": "Deadline M2",
+    //     "event_description": "",
+    //     "event_location": "",
+    //     "event_start": "20180409T000000Z",
+    //     "event_end": "20180409T000000Z",
+    //     "event_full_day": true,
+    //     "update_date": {
+    //       "$date": "2018-04-29T16:19:29.769Z"
+    //     }
+    //   },
+    //   {
+    //     "_id": {
+    //       "$oid": "5ae5f091e005440010d8a43c"
+    //     },
+    //     "calendar_id": 1,
+    //     "event_id": 2,
+    //     "calendar_title": "32 \u2013 Fortgeschrittene Softwaretechnologie",
+    //     "event_title": "Deadline M3",
+    //     "event_description": "Grobentwurf sollte fertig sein",
+    //     "event_location": "",
+    //     "event_start": "20180430T000000Z",
+    //     "event_end": "20180430T000000Z",
+    //     "event_full_day": true,
+    //     "update_date": {
+    //       "$date": "2018-04-29T16:19:29.768Z"
+    //     }
+    //   }];
+    //
+    // res.send(events);
 
     return next();
   });

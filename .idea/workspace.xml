@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8dd1fae9-7dba-4460-9313-f05aa8174f8e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/calendar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/v1/mensa.js" beforeDir="false" afterPath="$PROJECT_DIR$/v1/mensa.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +25,11 @@
               <file leaf-file-name="calendar.js" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/v1/calendar.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="480">
-                      <caret line="32" selection-start-line="26" selection-end-line="32" />
+                    <state relative-caret-position="481">
+                      <caret line="227" column="43" selection-start-line="227" selection-start-column="27" selection-end-line="227" selection-end-column="43" />
+                      <folding>
+                        <element signature="e#3045#5876#0" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -34,11 +38,11 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="mensa.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/v1/mensa.js">
+              <file leaf-file-name="fcmPush.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/push/fcmPush.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="392">
-                      <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
+                    <state relative-caret-position="525">
+                      <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
                     </state>
                   </provider>
                 </entry>
@@ -52,7 +56,7 @@
           <file leaf-file-name="ilias.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/v1/ilias.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
+                <state relative-caret-position="856">
                   <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
                 </state>
               </provider>
@@ -104,8 +108,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="$PROJECT_DIR$/push/fcmPush.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/v1/calendar.js" />
         <option value="$PROJECT_DIR$/v1/mensa.js" />
+        <option value="$PROJECT_DIR$/v1/calendar.js" />
       </list>
     </option>
   </component>
@@ -120,16 +124,17 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1417" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,7 +156,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,18 +210,19 @@
       <workItem from="1524555243551" duration="97000" />
       <workItem from="1524583914054" duration="9779000" />
       <workItem from="1524663139986" duration="8000" />
-      <workItem from="1524902545451" duration="7561000" />
+      <workItem from="1524902545451" duration="8750000" />
+      <workItem from="1525104422323" duration="3551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33742000" />
+    <option name="totallyTimeSpent" value="38482000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1417" extended-state="0" />
+    <frame x="0" y="0" width="3440" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10200866" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.056449253" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -226,7 +231,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32935917" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2690825" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21162444" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -245,6 +250,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/v1/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="26" selection-end-line="32" />
+          <folding>
+            <element signature="e#3045#5876#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/mensa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="238" column="34" selection-start-line="238" selection-start-column="34" selection-end-line="238" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/ilias.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -410,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/push/fcmPush.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -426,22 +448,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v1/ilias.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="856">
           <caret line="113" column="17" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v1/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="26" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/v1/mensa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
+        <state relative-caret-position="561">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/push/fcmPush.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v1/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="227" column="43" selection-start-line="227" selection-start-column="27" selection-end-line="227" selection-end-column="43" />
+          <folding>
+            <element signature="e#3045#5876#0" />
+          </folding>
         </state>
       </provider>
     </entry>

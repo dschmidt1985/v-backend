@@ -236,6 +236,7 @@ module.exports = function (server, restify) {
     var result = [];
     result.push(dishes[firstNumber]);
     result.push(dishes[secondNumber]);
+    result.push(dishes[thirdNumber]);
     result[0].name += '1';
     result[1].name += '2';
     result[2].name += '3';
@@ -243,23 +244,5 @@ module.exports = function (server, restify) {
 
     return next();
   });
-
-
-  // server.get('/v1/mensa/gummersbach', function(){
-  //   return [
-  //     {
-  //       name: 'Menü 1',
-  //       description: 'Frisches Putenschnitzel mit Jägersause und Kartoffelpüree dazu eine Beilage nach Wahl',
-  //       priceStudent: 5.0,
-  //       priceGuest: 7.0
-  //     },
-  //     {
-  //       name: 'Menü 2',
-  //       description: 'Nudeln geschwenk in Champingnonrahm mit frisch geriebenen Grana Padona und einer Beilage nach Wahl',
-  //       priceStudent: 3.5,
-  //       priceGuest: 5.5
-  //     }
-  //   ];
-  // });
 
 };
