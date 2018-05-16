@@ -25,7 +25,7 @@ mongoDB.connect(function(err) {
 function initAfterDB() {
   var ilias = require('./v1/ilias')(server, restify);
   var mensa = require('./v1/mensa')(server, restify);
-  var mensa = require('./v1/calendar')(server, restify);
+  var calendar = require('./v1/calendar')(server, restify);
   var push = require('./push/fcmPush')();
 
 
